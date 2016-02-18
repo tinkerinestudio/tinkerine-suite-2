@@ -1,0 +1,7 @@
+*.pyc
+.idea
+/Cura/mru_filelist.ini
+/Cura/preferences.ini
+python/
+PIL/
+10mmCube.STL
