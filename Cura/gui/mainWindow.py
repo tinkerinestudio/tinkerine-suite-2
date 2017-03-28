@@ -134,15 +134,15 @@ class mainWindow(wx.Frame):
 
 		expertMenu = wx.Menu()
 
-		self.showAdvancedSettings = expertMenu.Append(wx.ID_ANY, 'Show Advanced Settings', 'Show Advanced Settings', kind=wx.ITEM_CHECK)
+		self.showAdvancedSettings = expertMenu.Append(wx.ID_ANY, _('Show Advanced Settings'), _('Show Advanced Settings'), kind=wx.ITEM_CHECK)
 		self.Bind(wx.EVT_MENU, self.toggleAdvanced, self.showAdvancedSettings)
 
 		if version.isDevVersion():
-			self.unlockUniformScaling = expertMenu.Append(wx.ID_ANY, 'Toggle Uniform Scaling Lock', 'Toggle Uniform Scaling Lock', kind=wx.ITEM_CHECK)
+			self.unlockUniformScaling = expertMenu.Append(wx.ID_ANY, _('Toggle Uniform Scaling Lock'), _('Toggle Uniform Scaling Lock'), kind=wx.ITEM_CHECK)
 			expertMenu.Check(self.unlockUniformScaling.GetId(), True)
 			self.Bind(wx.EVT_MENU, self.toggleUniformScaling, self.unlockUniformScaling)
 
-		self.resetSlicingSettings = expertMenu.Append(wx.ID_ANY, 'Reset All Slicing Settings', 'Reset All Slicing Settings')
+		self.resetSlicingSettings = expertMenu.Append(wx.ID_ANY, _('Reset All Slicing Settings'), _('Reset All Slicing Settings'))
 		self.Bind(wx.EVT_MENU, self.resetSettings, self.resetSlicingSettings)
 
 		# if version.isDevVersion():
@@ -315,7 +315,7 @@ class mainWindow(wx.Frame):
 			self.scene.rotationLock = True
 
 	def resetSettings(self, e):
-		dlg = wx.MessageDialog(self, 'This will reset all slicing settings to their defaults.\nAre you sure you would like to reset all slicing settings?', 'Reset all slice settings', wx.YES_NO | wx.ICON_QUESTION)
+		dlg = wx.MessageDialog(self, _('This will reset all slicing settings to their defaults.\nAre you sure you would like to reset all slicing settings?'), _('Reset all slice settings'), wx.YES_NO | wx.ICON_QUESTION)
 		result = dlg.ShowModal() == wx.ID_YES
 		dlg.Destroy()
 		if result:
@@ -363,8 +363,8 @@ class mainWindow(wx.Frame):
 			# Save normal mode sash
 			self.normalSashPos = self.splitter.GetSashPosition()
 
-			# Change location of sash to width of quick mode pane 
-			#(width, height) = self.simpleSettingsPanel.GetSizer().GetSize() 
+			# Change location of sash to width of quick mode pane
+			#(width, height) = self.simpleSettingsPanel.GetSizer().GetSize()
 
 			self.splitter.SetSashPosition(width-60, True)
 			# Disable sash
@@ -377,7 +377,7 @@ class mainWindow(wx.Frame):
 		self.scene.updateProfileToControls()
 
 	def OnPreferences(self, e):
-		#(width, height) = self.simpleSettingsPanel.GetSizer().GetSize() 
+		#(width, height) = self.simpleSettingsPanel.GetSizer().GetSize()
 		#width = int(profile.getPreference('window_width'))
 		#self.splitter.SetSashPosition(width)
 		prefDialog = preferencesDialog.preferencesDialog(self)
@@ -454,7 +454,7 @@ class mainWindow(wx.Frame):
 		self.config.SetPath("/ProfileMRU")
 		self.profileFileHistory.Save(self.config)
 		self.config.Flush()
-		# Load Profile	
+		# Load Profile
 		profile.loadProfile(path)
 		self.updateProfileToControls()
 
@@ -668,7 +668,7 @@ class normalSettingsPanel(configBase.configPanelBase):
 		validators.wallThicknessValidator(c)
 		c = configBase.SettingRow(left, "Enable retraction", 'retraction_enable', False, 'Retract the filament when the nozzle is moving over a none-printed area. Details about the retraction can be configured in the advanced tab.')
 
-		
+
 		#(left, right, self.advancedPanel) = self.CreateDynamicConfigTab(self.nb, 'Advanced')
 		#self._addSettingsToPanels('advanced', left, right)
 		#self.SizeLabelWidths(left, right)
@@ -715,17 +715,17 @@ class normalSettingsPanel(configBase.configPanelBase):
 	def OnSize(self, e):
 		# Make the size of the Notebook control the same size as this control
 		self.nb.SetSize(self.GetSize())
-		
+
 		# Propegate the OnSize() event (just in case)
 		e.Skip()
-		
+
 		# Perform out resize magic
 		#self.UpdateSize(self.printPanel)
 		#self.UpdateSize(self.advancedPanel)
-	
+
 	def UpdateSize(self, configPanel):
 		sizer = configPanel.GetSizer()
-		
+
 		# Pseudocde
 		# if horizontal:
 		#     if width(col1) < best_width(col1) || width(col2) < best_width(col2):
@@ -734,7 +734,7 @@ class normalSettingsPanel(configBase.configPanelBase):
 		#     if width(col1) > (best_width(col1) + best_width(col1)):
 		#         switch to horizontal
 		#
-				
+
 		col1 = configPanel.leftPanel
 		colSize1 = col1.GetSize()
 		colBestSize1 = col1.GetBestSize()
@@ -743,7 +743,7 @@ class normalSettingsPanel(configBase.configPanelBase):
 		colBestSize2 = col2.GetBestSize()
 
 		orientation = sizer.GetOrientation()
-		
+
 		if orientation == wx.HORIZONTAL:
 			if (colSize1[0] <= colBestSize1[0]) or (colSize2[0] <= colBestSize2[0]):
 				configPanel.Freeze()
@@ -771,7 +771,7 @@ class normalSettingsPanel(configBase.configPanelBase):
 	#	super(normalSettingsPanel, self).updateProfileToControls()
 	#	self.alterationPanel.updateProfileToControls()
 	#	self.pluginPanel.updateProfileToControls()
-        
+
 	def updateProfileToControls(self):
 		super(normalSettingsPanel, self).updateProfileToControls()
 		# self.normalSettingsPanel.updateProfileToControls()

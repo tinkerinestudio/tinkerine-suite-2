@@ -122,7 +122,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.sliceButton.setTooltipColour((255,255,255))
 		self.sliceButton.setTooltipFontSize(19)
 		self.sliceButton.setTooltipFont("roboto-regular.ttf")
-		self.sliceButton._hoverHelpText._text = "Preview model\nfor 3D printing"
+		self.sliceButton._hoverHelpText._text = _('Preview model\nfor 3D printing')
 		self.sliceButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.sliceButton._hoverHelpText.makeText(True)
 		self.sliceButton._hoverHelpText._xNudge = -53
@@ -142,7 +142,7 @@ class SceneView(openglGui.glGuiPanel):
 		# self.abortButton      = openglGui.flexibleGlButton(self, 10, _(''), _(''), (5,0.43), [], self.OnAbortButton, -35, -38, (150,75), "top-right", (245,245,245,255))
 
 		self.openFileButton      = openglGui.glButton(self, 1, _(''), _(''), (-2.5,-0), self.showLoadModel, -14, -14, 100, "top")
-		self.openFileButton._hoverHelpText._text = "Imports 3D models (.STL or .OBJ)."
+		self.openFileButton._hoverHelpText._text = _("Imports 3D models (.STL or .OBJ).")
 		self.openFileButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.openFileButton._hoverHelpText.makeText(True)
 		self.openFileButton._tooltipNudgeY = 100
@@ -151,28 +151,28 @@ class SceneView(openglGui.glGuiPanel):
 		self.openFileButton._xBreakpoint = xBreakpoint
 
 		self.resolutionMenuButton      = openglGui.new_age_glRadioButton(self, 2, _('Resolution'), _('Ultra'), (-1.5,-0), self.topmenuGroup, self.noCallback, 0, 0, None, "top", (255,255,255,255))
-		self.resolutionMenuButton._hoverHelpText._text = "Adjusts the printing resolution.\n(The higher the resolution, the longer the print will take.)"
+		self.resolutionMenuButton._hoverHelpText._text = _("Adjusts the printing resolution.\n(The higher the resolution, the longer the print will take.)")
 		self.resolutionMenuButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.resolutionMenuButton._hoverHelpText.makeText(True)
 		self.resolutionMenuButton._tooltipNudgeY = 85
 		self.resolutionMenuButton._xBreakpoint = xBreakpoint
 
 		self.infillMenuButton      = openglGui.new_age_glRadioButton(self, 3, _('Infill'), _('Sparse'), (-0.5,-0), self.topmenuGroup, self.noCallback, 0, 0, None, "top", (255,255,255,255))
-		self.infillMenuButton._hoverHelpText._text = "Adjusts the density of the model."
+		self.infillMenuButton._hoverHelpText._text = _("Adjusts the density of the model.")
 		self.infillMenuButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.infillMenuButton._hoverHelpText.makeText(True)
 		self.infillMenuButton._tooltipNudgeY = 70
 		self.infillMenuButton._xBreakpoint = xBreakpoint
 
 		self.wallMenuButton      = openglGui.new_age_glRadioButton(self, 4, _('Wall'), _('1'), (0.5,0), self.topmenuGroup, self.noCallback, 0, 0, None, "top", (255,255,255,255))
-		self.wallMenuButton._hoverHelpText._text = "Adjusts the shell thickness of the model."
+		self.wallMenuButton._hoverHelpText._text = _("Adjusts the shell thickness of the model.")
 		self.wallMenuButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.wallMenuButton._hoverHelpText.makeText(True)
 		self.wallMenuButton._tooltipNudgeY = 70
 		self.wallMenuButton._xBreakpoint = xBreakpoint
 
 		self.filamentMenuButton      = openglGui.new_age_glRadioButton(self, 5, _('Filament'), _('1.75 mm'), (2.5,-0), self.topmenuGroup, self.noCallback, 0, 0, None, "top", (255,255,255,255))
-		self.filamentMenuButton._hoverHelpText._text = "Sets the filament diameter."
+		self.filamentMenuButton._hoverHelpText._text = _("Sets the filament diameter.")
 		self.filamentMenuButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.filamentMenuButton._hoverHelpText.makeText(True)
 		self.filamentMenuButton._tooltipNudgeY = 70
@@ -204,7 +204,7 @@ class SceneView(openglGui.glGuiPanel):
 		resolutionButtonGroup = []
 		self.groupOfTopMenuGroups.append(resolutionButtonGroup)
 
-		self.lowResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Low", (-1.5,0.6), resolutionButtonGroup, self.lowResolution, 0, 0, (72,28), "top")
+		self.lowResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Low'), (-1.5,0.6), resolutionButtonGroup, self.lowResolution, 0, 0, (72,28), "top")
 		self.lowResolutionButton._hoverHelpText._text = "300 microns (0.3 mm) per layer"
 		self.lowResolutionButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.lowResolutionButton._hoverHelpText.makeText(True)
@@ -212,7 +212,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.lowResolutionButton._tooltipNudgeY = 10
 		self.lowResolutionButton._xBreakpoint = xBreakpoint
 
-		self.mediumResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Medium", (-1.5,0.92), resolutionButtonGroup, self.medResolution, 0, 0, (72,28), "top")
+		self.mediumResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Medium'), (-1.5,0.92), resolutionButtonGroup, self.medResolution, 0, 0, (72,28), "top")
 		self.mediumResolutionButton._hoverHelpText._text = "200 microns (0.2 mm) per layer"
 		self.mediumResolutionButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.mediumResolutionButton._hoverHelpText.makeText(True)
@@ -220,7 +220,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.mediumResolutionButton._tooltipNudgeY = 10
 		self.mediumResolutionButton._xBreakpoint = xBreakpoint
 
-		self.highResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "High", (-1.5,1.24), resolutionButtonGroup, self.highResolution, 0, 0, (72,28), "top")
+		self.highResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('High'), (-1.5,1.24), resolutionButtonGroup, self.highResolution, 0, 0, (72,28), "top")
 		self.highResolutionButton.setTooltipFontSize(14)
 		self.highResolutionButton._hoverHelpText._text = "100 microns (0.1 mm) per layer"
 		self.highResolutionButton._hoverHelpText._backgroundColour = (0,0,255,255)
@@ -229,7 +229,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.highResolutionButton._tooltipNudgeY = 10
 		self.highResolutionButton._xBreakpoint = xBreakpoint
 
-		self.fineResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Ultra", (-1.5,1.56), resolutionButtonGroup, self.ultraResolution, 0, 0, (72,28), "top")
+		self.fineResolutionButton   = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Ultra'), (-1.5,1.56), resolutionButtonGroup, self.ultraResolution, 0, 0, (72,28), "top")
 		self.fineResolutionButton.advancedOnly = True
 		self.fineResolutionButton._hoverHelpText._text = "50 microns (0.05 mm) per layer"
 		self.fineResolutionButton._hoverHelpText._backgroundColour = (0,0,255,255)
@@ -247,7 +247,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.SPARSE_INFILL_VALUE = 18
 		self.DENSE_INFILL_VALUE = 30
 
-		self.hollowInfillButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Hollow", (-0.5,0.6), infillButtonGroup, lambda infill:self.setInfill(self.HOLLOW_INFILL_VALUE, "Hollow"), 0, 0, (72,28), "top")
+		self.hollowInfillButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Hollow'), (-0.5,0.6), infillButtonGroup, lambda infill:self.setInfill(self.HOLLOW_INFILL_VALUE, "Hollow"), 0, 0, (72,28), "top")
 		self.hollowInfillButton._hoverHelpText._text = "0% insides filled"
 		self.hollowInfillButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.hollowInfillButton._hoverHelpText.makeText(True)
@@ -255,7 +255,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.hollowInfillButton._tooltipNudgeY = 10
 		self.hollowInfillButton._xBreakpoint = xBreakpoint
 
-		self.sparseInfillButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Sparse", (-0.5,0.92), infillButtonGroup, lambda infill:self.setInfill(self.SPARSE_INFILL_VALUE, "Sparse"), 0, 0, (72,28), "top")
+		self.sparseInfillButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Sparse'), (-0.5,0.92), infillButtonGroup, lambda infill:self.setInfill(self.SPARSE_INFILL_VALUE, "Sparse"), 0, 0, (72,28), "top")
 		self.sparseInfillButton._hoverHelpText._text = "18% insides filled"
 		self.sparseInfillButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.sparseInfillButton._hoverHelpText.makeText(True)
@@ -263,7 +263,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.sparseInfillButton._tooltipNudgeY = 10
 		self.sparseInfillButton._xBreakpoint = xBreakpoint
 
-		self.denseInfillButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Dense", (-0.5,1.24), infillButtonGroup, lambda infill:self.setInfill(self.DENSE_INFILL_VALUE, "Dense"), 0, 0, (72,28), "top")
+		self.denseInfillButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Dense'), (-0.5,1.24), infillButtonGroup, lambda infill:self.setInfill(self.DENSE_INFILL_VALUE, "Dense"), 0, 0, (72,28), "top")
 		self.denseInfillButton._hoverHelpText._text = "30% insides filled"
 		self.denseInfillButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.denseInfillButton._hoverHelpText.makeText(True)
@@ -309,10 +309,10 @@ class SceneView(openglGui.glGuiPanel):
 
 		supportButtonGroup = []
 		self.groupOfTopMenuGroups.append(supportButtonGroup)
-		self.offSupportButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Off", (1.5,0.6), supportButtonGroup, self.supportOff, 0, 0, (72,28), "top")
+		self.offSupportButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('Off'), (1.5,0.6), supportButtonGroup, self.supportOff, 0, 0, (72,28), "top")
 		self.offSupportButton._xBreakpoint = xBreakpoint
 
-		self.onSupportButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "On", (1.5,0.92), supportButtonGroup, self.supportAll, 0, 0, (72,28), "top")
+		self.onSupportButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", _('On'), (1.5,0.92), supportButtonGroup, self.supportAll, 0, 0, (72,28), "top")
 		self.onSupportButton._xBreakpoint = xBreakpoint
 
 		self.exteriorSupportButton = openglGui.new_age_flexibleGlRadioButton(self, 0, "", "Exterior", (1.5,0.92), supportButtonGroup, self.supportExt, 0, 0, (72,28), "top")
@@ -369,19 +369,19 @@ class SceneView(openglGui.glGuiPanel):
 
 		self.modelSelectedButtonGroup = []
 
-		self.duplicateButton = openglGui.flexibleGlButton(self, 27, "", "Duplicate", (1.75, -0.9), self.modelSelectedButtonGroup, self.OnButtonMultiply, 0, 12, (70,70), "bottom", (240,240,240,255))
+		self.duplicateButton = openglGui.flexibleGlButton(self, 27, "", _('Duplicate'), (1.75, -0.9), self.modelSelectedButtonGroup, self.OnButtonMultiply, 0, 12, (70,70), "bottom", (240,240,240,255))
 		self.duplicateButton._hoverOverlayColour = None
 		self.duplicateButton._extraHitbox = (-25,25,-25,25)
-		self.centerButton = openglGui.flexibleGlButton(self, 28, "", "Center", (2.75, -0.9), self.modelSelectedButtonGroup, self.OnCenter, 0, 12, (70,70), "bottom", (240,240,240,255))
+		self.centerButton = openglGui.flexibleGlButton(self, 28, "", _('Center'), (2.75, -0.9), self.modelSelectedButtonGroup, self.OnCenter, 0, 12, (70,70), "bottom", (240,240,240,255))
 		self.centerButton._hoverOverlayColour = None
 		self.centerButton._extraHitbox = (-25,25,-25,25)
-		self.layFlatButton = openglGui.flexibleGlButton(self, 29, "", "Lay Flat", (3.75, -0.9), self.modelSelectedButtonGroup, self.OnLayFlat, 0, 12, (70,70), "bottom", (240,240,240,255))
+		self.layFlatButton = openglGui.flexibleGlButton(self, 29, "", _('Lay Flat'), (3.75, -0.9), self.modelSelectedButtonGroup, self.OnLayFlat, 0, 12, (70,70), "bottom", (240,240,240,255))
 		self.layFlatButton._hoverOverlayColour = None
 		self.layFlatButton._extraHitbox = (-25,25,-25,25)
-		self.resetButton = openglGui.flexibleGlButton(self, 30, "", "Reset", (4.75, -0.9), self.modelSelectedButtonGroup, self.OnReset, 0, 12, (70,70), "bottom", (240,240,240,255))
+		self.resetButton = openglGui.flexibleGlButton(self, 30, "", _('Reset'), (4.75, -0.9), self.modelSelectedButtonGroup, self.OnReset, 0, 12, (70,70), "bottom", (240,240,240,255))
 		self.resetButton._hoverOverlayColour = None
 		self.resetButton._extraHitbox = (-25,25,-25,25)
-		self.deleteButton = openglGui.flexibleGlButton(self, 39, "", "Delete", (5.75, -0.9), self.modelSelectedButtonGroup, self.deleteSelection, 0, 12, (70,70), "bottom", (240,240,240,255))
+		self.deleteButton = openglGui.flexibleGlButton(self, 39, "", _('Delete'), (5.75, -0.9), self.modelSelectedButtonGroup, self.deleteSelection, 0, 12, (70,70), "bottom", (240,240,240,255))
 		self.deleteButton._hoverOverlayColour = None
 		self.deleteButton._extraHitbox = (-25,25,-25,25)
 
@@ -412,7 +412,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.link1 =  openglGui.flexibleGLTextLabel(self, 14, "", (-2.05, -0.65), self.modelSelectedButtonGroup, 0, 0, (12,2), "bottom")
 		self.link2 =  openglGui.flexibleGLTextLabel(self, 14, "", (-0.748, -0.65), self.modelSelectedButtonGroup, 0, 0, (12,2), "bottom")
 
-		self.scaleLabel = openglGui.flexibleGLTextLabel(self, 0, "Scale:", (-4.9, -0.525), self.modelSelectedButtonGroup, 0,0, (0,0), "bottom")
+		self.scaleLabel = openglGui.flexibleGLTextLabel(self, 0, _('Scale:'), (-4.9, -0.525), self.modelSelectedButtonGroup, 0,0, (0,0), "bottom")
 
 		self.scaleXctrl = openglGui.glNumberCtrl(self, 35, '100', (-3.5, -0.25), lambda value: self.OnScaleEntry(value, 0), True)
 		self.modelSelectedButtonGroup.append(self.scaleXctrl)
@@ -439,28 +439,28 @@ class SceneView(openglGui.glGuiPanel):
 		self.printPreviewGroup.append(self.layerSelect)
 
 
-		self.editButton = openglGui.flexibleGlButton(self, 16, "", "Edit", (3.5, -0.65), self.printPreviewGroup, lambda button: self.setModelView(1), 0, 0, (100,30), "bottom", (255,255,255,255))
+		self.editButton = openglGui.flexibleGlButton(self, 16, "", _('Edit'), (3.5, -0.65), self.printPreviewGroup, lambda button: self.setModelView(1), 0, 0, (100,30), "bottom", (255,255,255,255))
 		self.editButton.setTooltipColour((255,255,255))
 		self.editButton.setTooltipFont("roboto-medium.ttf")
 
-		self.editButton._hoverHelpText._text = "Return to edit slicing settings."
+		self.editButton._hoverHelpText._text = _('Return to edit slicing settings.')
 		self.editButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.editButton._hoverHelpText.makeText(True)
 		self.editButton._tooltipNudgeX = 10
 		self.editButton._tooltipNudgeY = -25
 
-		self.savePrintButton = openglGui.flexibleGlButton(self, 15, "", "Save for Print", (5.5, -0.65), self.printPreviewGroup, self.showSaveModalWindow, 0, 0, (160,30), "bottom", (255,255,255,255))
+		self.savePrintButton = openglGui.flexibleGlButton(self, 15, "", _('Save for Print'), (5.5, -0.65), self.printPreviewGroup, self.showSaveModalWindow, 0, 0, (160,30), "bottom", (255,255,255,255))
 		self.savePrintButton.setTooltipColour((255,255,255))
 		self.savePrintButton.setTooltipFont("roboto-medium.ttf")
 
 		self.clockIcon =  openglGui.flexibleGLTextLabel(self, 25, "", (-6.45, -0.65), self.printPreviewGroup, 0, 0, (80,80), "bottom")
-		self.timeEstLabel =  openglGui.flexibleGLTextLabel(self, 0, "Print Time", (-5.7, -0.7), self.printPreviewGroup, 0, 0, (0,0), "bottom", "roboto-light.ttf", (80,80,80), 13)
+		self.timeEstLabel =  openglGui.flexibleGLTextLabel(self, 0, _('Print Time'), (-5.7, -0.7), self.printPreviewGroup, 0, 0, (0,0), "bottom", "roboto-light.ttf", (80,80,80), 13)
 		self.timeEstLabelTime =  openglGui.flexibleGLTextLabel(self, 0, "00h:00m", (-6.125, -0.425), self.printPreviewGroup, 0, 0, (0,0), "bottom", "roboto-regular.ttf", (80,80,80), 20)
 		self.timeEstLabelTime.setTextAlignment("left")
 
 
 		self.weightIcon =  openglGui.flexibleGLTextLabel(self, 23, "", (-4.4, -0.65), self.printPreviewGroup, 0, 0, (80,80), "bottom")
-		self.weightLabel =  openglGui.flexibleGLTextLabel(self, 0, "Filament Usage", (-3.45, -0.7), self.printPreviewGroup, 0, 0, (0,0), "bottom", "roboto-light.ttf", (80,80,80), 13)
+		self.weightLabel =  openglGui.flexibleGLTextLabel(self, 0, _('Filament Usage'), (-3.45, -0.7), self.printPreviewGroup, 0, 0, (0,0), "bottom", "roboto-light.ttf", (80,80,80), 13)
 		self.weightLabelGrams =  openglGui.flexibleGLTextLabel(self, 0, "00g", (-4.075, -0.425), self.printPreviewGroup, 0, 0, (0,0), "bottom", "roboto-regular.ttf", (80,80,80), 20)
 		self.weightLabelGrams.setTextAlignment("left")
 
@@ -479,12 +479,12 @@ class SceneView(openglGui.glGuiPanel):
 		self.temperatureCounter = int(profile.getProfileSettingFloat('print_temperature'))
 		self.temperaturebedCounter = int(profile.getProfileSettingFloat('print_bed_temperature'))
 
-		self.printPreviewLabel = openglGui.flexibleGLTextLabel(self, 0, "Print Preview", (0, 1.5), self.printPreviewGroup, 0, 0, (0,0), "top", "roboto-regular.ttf", (128,128,128), 30)
+		self.printPreviewLabel = openglGui.flexibleGLTextLabel(self, 0, _('Print Preview'), (0, 1.5), self.printPreviewGroup, 0, 0, (0,0), "top", "roboto-regular.ttf", (128,128,128), 30)
 
 		self.modelView = 1
 
 		self.insertPauseButton = openglGui.flexibleGlButton(self, 37, '', '', (1.655, -0.67), self.printPreviewGroup, self.onInsertPauseButton, 0, 0, (100,100), "bottom", (240,240,240,255))
-		self.insertPauseButton._hoverHelpText._text = "Inserts pause\nat current layer."
+		self.insertPauseButton._hoverHelpText._text = _('Inserts pause\nat current layer.')
 		self.insertPauseButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.insertPauseButton._hoverHelpText.makeText(True)
 		self.insertPauseButton._tooltipNudgeY = -15
@@ -492,7 +492,7 @@ class SceneView(openglGui.glGuiPanel):
 		self.insertPauseButton._extraHitbox = (-15,15,-15,15)
 
 		self.deletePausesButton = openglGui.flexibleGlButton(self, 38, '', '', (2.1, -0.67), self.printPreviewGroup, self.onDeleteAllPausesButton, 0, 0, (100,100), "bottom", (240,240,240,255))
-		self.deletePausesButton._hoverHelpText._text = "Resets all pauses."
+		self.deletePausesButton._hoverHelpText._text = _('Resets all pauses.')
 		self.deletePausesButton._hoverHelpText._backgroundColour = (0,0,255,255)
 		self.deletePausesButton._hoverHelpText.makeText(True)
 		self.deletePausesButton._tooltipNudgeY = -15
@@ -1170,7 +1170,7 @@ class SceneView(openglGui.glGuiPanel):
 
 	def setSliceButtonMode(self):
 		self.sliceButton.setImageID(9)
-		self.sliceButton.setTooltipText("Slice")
+		self.sliceButton.setTooltipText(_('Slice'))
 		self.sliceButton._tooltipText.makeText(True)
 		self.sliceButton._tooltipNudgeY = 23
 		self.sliceButton._tooltipNudgeX = 50
@@ -3713,7 +3713,7 @@ class ProjectObject(object):
 		self.swapYZ = False
 		self.extruder = 0
 		self.profile = None
-		
+
 		self.modelDisplayList = None
 		self.modelDirty = False
 
@@ -3723,10 +3723,10 @@ class ProjectObject(object):
 			pass
 
 		#print self.mesh.getMinimumZ()
-		
+
 		self.centerX = -self.getMinimum()[0] + 5
 		self.centerY = -self.getMinimum()[1] + 5
-		
+
 		self.updateModelTransform()
 
 		self.centerX = -self.getMinimum()[0] + 5
@@ -3763,20 +3763,20 @@ class ProjectObject(object):
 		self.mesh.vertexes -= numpy.array([minV[0] + (maxV[0] - minV[0]) / 2, minV[1] + (maxV[1] - minV[1]) / 2, minZ])
 		minZ = self.mesh.getMinimumZ()
 		self.modelDirty = True
-	
+
 	def getMinimum(self):
 		return self.mesh.getMinimum()
 	def getMaximum(self):
 		return self.mesh.getMaximum()
 	def getSize(self):
 		return self.mesh.getSize()
-	
+
 	def clone(self):
 		p = ProjectObject(self.parent, self.filename)
 
 		p.centerX = self.centerX + 5
 		p.centerY = self.centerY + 5
-		
+
 		p.filename = self.filename
 		p.scale = self.scale
 		p.rotate = self.rotate
@@ -3787,11 +3787,11 @@ class ProjectObject(object):
 		p.swapYZ = self.swapYZ
 		p.extruder = self.extruder
 		p.profile = self.profile
-		
+
 		p.updateModelTransform()
-		
+
 		return p
-	
+
 	def clampXY(self):
 		if self.centerX < -self.getMinimum()[0] * self.scale + self.parent.extruderOffset[self.extruder][0]:
 			self.centerX = -self.getMinimum()[0] * self.scale + self.parent.extruderOffset[self.extruder][0]
@@ -3801,7 +3801,7 @@ class ProjectObject(object):
 			self.centerX = self.parent.machineSize[0] + self.parent.extruderOffset[self.extruder][0] - self.getMaximum()[0] * self.scale
 		if self.centerY > self.parent.machineSize[1] + self.parent.extruderOffset[self.extruder][1] - self.getMaximum()[1] * self.scale:
 			self.centerY = self.parent.machineSize[1] + self.parent.extruderOffset[self.extruder][1] - self.getMaximum()[1] * self.scale
-			
+
 def getCodeInt(line, code):
 	n = line.find(code) + 1
 	if n < 1:
