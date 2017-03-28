@@ -4,140 +4,149 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-03-28 07:32+Est\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-03-27 20:59-0400\n"
+"PO-Revision-Date: 2017-03-27 21:01-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_CA\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=CHARSET\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
-
+"X-Generator: Poedit 2.0beta5\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ..\..\gui\mainWindow.py:28
 msgid "Tinkerine Suite - "
-msgstr ""
+msgstr "Tinkerine Suite - "
 
 #: ..\..\gui\mainWindow.py:35
 msgid "../suite.ico"
-msgstr ""
+msgstr "../suite.ico"
 
 #: ..\..\gui\mainWindow.py:49 ..\..\gui\mainWindow.py:590
 msgid "Tinkerine Suite"
-msgstr ""
+msgstr "Tinkerine Suite"
 
 #: ..\..\gui\mainWindow.py:65
 msgid "Import Model File...\tCtrl+I"
-msgstr ""
+msgstr "Importer le fichier modèle....\tCtrl+I"
 
 #: ..\..\gui\mainWindow.py:67
 msgid "Save Model...\tCtrl+S"
-msgstr ""
+msgstr "Sauvegarder le fichier modèle...\tCtrl+S"
 
 #: ..\..\gui\mainWindow.py:69
 msgid "New Project... \tCtrl+N"
-msgstr ""
+msgstr "Nouveau projet...\tCtrl+N"
 
 #: ..\..\gui\mainWindow.py:102
 msgid "&Recent Model Files"
-msgstr ""
+msgstr "&Fichiers modèle récent"
 
 #: ..\..\gui\mainWindow.py:115
 msgid "Quit"
-msgstr ""
+msgstr "Quitter"
 
 #: ..\..\gui\mainWindow.py:117
 msgid "&File"
-msgstr ""
+msgstr "&Fichier"
 
 #: ..\..\gui\mainWindow.py:137
 msgid "Show Advanced Settings"
-msgstr ""
+msgstr "Afficher les paramètres avancés"
 
 #: ..\..\gui\mainWindow.py:141
 msgid "Toggle Uniform Scaling Lock"
-msgstr ""
+msgstr "Basculer le vérouillage de l'échelle uniforme"
 
 #: ..\..\gui\mainWindow.py:145
 msgid "Reset All Slicing Settings"
-msgstr ""
+msgstr "Réinitialiser tous les paramètres de découpage"
 
 #: ..\..\gui\mainWindow.py:149
 msgid "Open Debug Settings..."
-msgstr ""
+msgstr "Ouvrir les paramètres de débogage..."
 
 #: ..\..\gui\mainWindow.py:157
 msgid "Update Printer Firmware"
-msgstr ""
+msgstr "Mettre à jour le micrologiciel de l'imprimante"
 
 #: ..\..\gui\mainWindow.py:170
 msgid "DittoPro"
-msgstr ""
+msgstr "DittoPro"
 
 #: ..\..\gui\mainWindow.py:172
 msgid "Ditto+"
-msgstr ""
+msgstr "Ditto+"
 
 #: ..\..\gui\mainWindow.py:174
 msgid "Litto"
-msgstr ""
+msgstr "Litto"
 
 #: ..\..\gui\mainWindow.py:185
 msgid "Printer"
-msgstr ""
+msgstr "Imprimante"
 
 #: ..\..\gui\mainWindow.py:194
 msgid "About Tinkerine Suite"
-msgstr ""
+msgstr "À propos de Tinkerine Suite"
 
 #: ..\..\gui\mainWindow.py:196
 msgid "About"
-msgstr ""
+msgstr "À propos"
 
 #: ..\..\gui\mainWindow.py:200
 msgid "First Run Tour"
-msgstr ""
+msgstr "Tour de première ouverture"
 
 #: ..\..\gui\mainWindow.py:203
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Raccourcis clavier"
 
 #: ..\..\gui\mainWindow.py:205
 msgid "Help"
-msgstr ""
+msgstr "Aide"
 
 #: ..\..\gui\mainWindow.py:318
 msgid "Reset all slice settings"
-msgstr ""
+msgstr "Réinitialiser tous les paramètres de découpage"
 
 #: ..\..\gui\mainWindow.py:318
 msgid ""
 "This will reset all slicing settings to their defaults.\n"
 "Are you sure you would like to reset all slicing settings?"
 msgstr ""
+"Cela réinitialisera tous les paramètres de découpage à leurs valeurs par "
+"défaut.\n"
+"Voulez-vous vraiment réinitialiser tous les paramètres de découpage?"
 
 #: ..\..\gui\mainWindow.py:534
 msgid "Open firmware to upload"
-msgstr ""
+msgstr "Ouvrir le micrologiciel à téléverser"
 
 #: ..\..\gui\mainWindow.py:591
-msgid "\tPlating, Preparing and Slicing for Fused Filament Fabrication 3D printing."
+msgid ""
+"\tPlating, Preparing and Slicing for Fused Filament Fabrication 3D printing."
 msgstr ""
+"Placage, préparation et découpage pour l'impression de filaments fondus en "
+"3D."
 
 #: ..\..\gui\mainWindow.py:592
 msgid "http://www.tinkerine.com"
-msgstr ""
+msgstr "http://www.tinkerine.com"
 
 #: ..\..\gui\mainWindow.py:593
 msgid "Copyright (C) Tinkerine 2016"
-msgstr ""
+msgstr "Copyright (C) Tinkerine 2016"
 
 #: ..\..\gui\mainWindow.py:594
 msgid ""
 "\n"
 "    This program is free software: you can redistribute it and/or modify\n"
-"    it under the terms of the GNU Affero General Public License as published by\n"
+"    it under the terms of the GNU Affero General Public License as published "
+"by\n"
 "    the Free Software Foundation, either version 3 of the License, or\n"
 "    (at your option) any later version.\n"
 "\n"
@@ -146,258 +155,280 @@ msgid ""
 "    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
 "    GNU Affero General Public License for more details.\n"
 "\n"
-"    You should have received a copy of the GNU Affero General Public License\n"
+"    You should have received a copy of the GNU Affero General Public "
+"License\n"
 "    along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 msgstr ""
+"\n"
+"    This program is free software: you can redistribute it and/or modify\n"
+"    it under the terms of the GNU Affero General Public License as published "
+"by\n"
+"    the Free Software Foundation, either version 3 of the License, or\n"
+"    (at your option) any later version.\n"
+"\n"
+"    This program is distributed in the hope that it will be useful,\n"
+"    but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+"    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
+"    GNU Affero General Public License for more details.\n"
+"\n"
+"    You should have received a copy of the GNU Affero General Public "
+"License\n"
+"    along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
 
 #: ..\..\gui\sceneView.py:80
 msgid "dpro_tm.stl"
-msgstr ""
+msgstr "dpro_tm.stl"
 
-#: ..\..\gui\sceneView.py:121 ..\..\gui\sceneView.py:144
-msgid ""
-msgstr ""
-
+# Too big for button
 #: ..\..\gui\sceneView.py:121 ..\..\gui\sceneView.py:1173
 msgid "Slice"
-msgstr ""
+msgstr "Découper"
 
 #: ..\..\gui\sceneView.py:125
 msgid ""
 "Preview model\n"
 "for 3D printing"
 msgstr ""
+"Prévisualiser le modèle\n"
+"pour l'impression 3D"
 
 #: ..\..\gui\sceneView.py:145
 msgid "Imports 3D models (.STL or .OBJ)."
-msgstr ""
+msgstr "Importer les modèles 3D (.STL ou .OBJ)."
 
 #: ..\..\gui\sceneView.py:153
 msgid "Resolution"
-msgstr ""
+msgstr "Résolution"
 
 #: ..\..\gui\sceneView.py:153 ..\..\gui\sceneView.py:232
 msgid "Ultra"
-msgstr ""
+msgstr "Ultra"
 
 #: ..\..\gui\sceneView.py:154
 msgid ""
 "Adjusts the printing resolution.\n"
 "(The higher the resolution, the longer the print will take.)"
 msgstr ""
+"Ajuste la résolution d'impression\n"
+"(Plus la résolution est haute, plus l'impression sera longue.)"
 
+# Too big for button
 #: ..\..\gui\sceneView.py:160
 msgid "Infill"
-msgstr ""
+msgstr "Remplissage"
 
 #: ..\..\gui\sceneView.py:160 ..\..\gui\sceneView.py:258
 msgid "Sparse"
-msgstr ""
+msgstr "Peu abondant"
 
 #: ..\..\gui\sceneView.py:161
 msgid "Adjusts the density of the model."
-msgstr ""
+msgstr "Ajuste la densité du modèle"
 
 #: ..\..\gui\sceneView.py:167
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ..\..\gui\sceneView.py:167
 msgid "Wall"
-msgstr ""
+msgstr "Mur"
 
 #: ..\..\gui\sceneView.py:168
 msgid "Adjusts the shell thickness of the model."
-msgstr ""
+msgstr "Ajuste l'épaisseur de l'extérieur du modèle."
 
 #: ..\..\gui\sceneView.py:174
 msgid "1.75 mm"
-msgstr ""
+msgstr "1.75 mm"
 
 #: ..\..\gui\sceneView.py:174
 msgid "Filament"
-msgstr ""
+msgstr "Filament"
 
 #: ..\..\gui\sceneView.py:175
 msgid "Sets the filament diameter."
-msgstr ""
+msgstr "Règle le diamètre du filament."
 
 #: ..\..\gui\sceneView.py:181
 msgid "Support"
-msgstr ""
+msgstr "Support"
 
 #: ..\..\gui\sceneView.py:181 ..\..\gui\sceneView.py:312
 msgid "Off"
-msgstr ""
+msgstr "Désactivé"
 
 #: ..\..\gui\sceneView.py:188
 msgid "100 mm/s"
-msgstr ""
+msgstr "100 mm/s"
 
 #: ..\..\gui\sceneView.py:188
 msgid "Speed"
-msgstr ""
+msgstr "Vitesse"
 
 #: ..\..\gui\sceneView.py:195
 msgid "220 C"
-msgstr ""
+msgstr "220 C"
 
 #: ..\..\gui\sceneView.py:195
 msgid "Temp"
-msgstr ""
+msgstr "Température"
 
 #: ..\..\gui\sceneView.py:207
 msgid "Low"
-msgstr ""
+msgstr "Basse"
 
 #: ..\..\gui\sceneView.py:215
 msgid "Medium"
-msgstr ""
+msgstr "Médium"
 
 #: ..\..\gui\sceneView.py:223
 msgid "High"
-msgstr ""
+msgstr "Haute"
 
 #: ..\..\gui\sceneView.py:250
 msgid "Hollow"
-msgstr ""
+msgstr "Creux"
 
 #: ..\..\gui\sceneView.py:266
 msgid "Dense"
-msgstr ""
+msgstr "Dense"
 
 #: ..\..\gui\sceneView.py:315
 msgid "On"
-msgstr ""
+msgstr "Activé"
 
 #: ..\..\gui\sceneView.py:372 ..\..\gui\sceneView.py:2119
 #: ..\..\gui\sceneView.py:2618
 msgid "Duplicate"
-msgstr ""
+msgstr "Dupliquer"
 
 #: ..\..\gui\sceneView.py:375
 msgid "Center"
-msgstr ""
+msgstr "Centrer"
 
 #: ..\..\gui\sceneView.py:378
 msgid "Lay Flat"
-msgstr ""
+msgstr "Poser à plat"
 
 #: ..\..\gui\sceneView.py:381
 msgid "Reset"
-msgstr ""
+msgstr "Réinitialiser"
 
 #: ..\..\gui\sceneView.py:384 ..\..\gui\sceneView.py:2617
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 #: ..\..\gui\sceneView.py:415
 msgid "Scale:"
-msgstr ""
+msgstr "Échelle :"
 
 #: ..\..\gui\sceneView.py:442
 msgid "Edit"
-msgstr ""
+msgstr "Modifier"
 
 #: ..\..\gui\sceneView.py:446
 msgid "Return to edit slicing settings."
-msgstr ""
+msgstr "Retournez pour modifier les paramètres de découpage."
 
+# Too big for button
 #: ..\..\gui\sceneView.py:452
 msgid "Save for Print"
-msgstr ""
+msgstr "Sauvegarder pour l'impression"
 
+# Too big for label
 #: ..\..\gui\sceneView.py:457
 msgid "Print Time"
-msgstr ""
+msgstr "Temp d'impression"
 
 #: ..\..\gui\sceneView.py:463
 msgid "Filament Usage"
-msgstr ""
+msgstr "Usage de filament"
 
 #: ..\..\gui\sceneView.py:482
 msgid "Print Preview"
-msgstr ""
+msgstr "Aperçu de l'impression"
 
 #: ..\..\gui\sceneView.py:487
 msgid ""
 "Inserts pause\n"
 "at current layer."
 msgstr ""
+"Insère la pause\n"
+"à la couche actuelle."
 
 #: ..\..\gui\sceneView.py:495
 msgid "Resets all pauses."
-msgstr ""
+msgstr "Réinitialiser toute les pauses"
 
 #: ..\..\gui\sceneView.py:936
 msgid "Import 3D Model"
-msgstr ""
+msgstr "Importer le modèle 3D"
 
 #: ..\..\gui\sceneView.py:981
 msgid "loading gcode... please wait..."
-msgstr ""
+msgstr "Chargement du fichier gcode... Veuillez patienter..."
 
 #: ..\..\gui\sceneView.py:1085
 msgid "Save 3D model"
-msgstr ""
+msgstr "Sauvegarder le modèle 3D"
 
 #: ..\..\gui\sceneView.py:1092
 msgid "Saving model(s), please wait..."
-msgstr ""
+msgstr "Sauvegarde du modèle, veuillez patienter..."
 
 #: ..\..\gui\sceneView.py:1274
 msgid "Save toolpath"
-msgstr ""
+msgstr "Sauvegarder le toolpath"
 
 #: ..\..\gui\sceneView.py:1290
 msgid "saving gcode... please wait..."
-msgstr ""
+msgstr "Sauvegarde du fichier gcode... Veuillez patienter..."
 
 #: ..\..\gui\sceneView.py:1375
 msgid "saving to sd... please wait..."
-msgstr ""
+msgstr "Sauvegarde sur la carte SD... Veuillez patienter..."
 
 #: ..\..\gui\sceneView.py:1407
 msgid "Save project gcode file"
-msgstr ""
+msgstr "Sauvegarder le fichier gcode du projet"
 
 #: ..\..\gui\sceneView.py:1417
 msgid "saving to directory... please wait..."
-msgstr ""
+msgstr "Sauvegarder dans le dossier... Veuillez patienter..."
 
 #: ..\..\gui\sceneView.py:2031 ..\..\gui\sceneView.py:2135
 #: ..\..\gui\sceneView.py:2634
 msgid "working... please wait..."
-msgstr ""
+msgstr "Chargement... Veuiller patienter..."
 
 #: ..\..\gui\sceneView.py:2119
 msgid "Copies"
-msgstr ""
+msgstr "Copies"
 
 #: ..\..\gui\sceneView.py:2119
 msgid "How many additional copies do you want?"
-msgstr ""
+msgstr "Combien de copies voulez-vous?"
 
 #: ..\..\gui\sceneView.py:2287
 msgid "loading model... please wait..."
-msgstr ""
+msgstr "Chargement du modèle... Veuillez patienter..."
 
 #: ..\..\gui\sceneView.py:2619
 msgid "Center on platform"
-msgstr ""
+msgstr "Centrer sur la plateforme"
 
 #: ..\..\gui\sceneView.py:2621
 msgid "Split"
-msgstr ""
+msgstr "Séparer"
 
 #: ..\..\gui\sceneView.py:2625
 msgid "New Project"
-msgstr ""
+msgstr "Nouveau projet"
 
 #: ..\..\gui\splashScreen.py:11
 msgid "splash3.png"
-msgstr ""
+msgstr "splash3.png"
 
 #: ..\..\gui\util\openglGui.py:351
 msgid "Logo_suite.png"
-msgstr ""
+msgstr "Logo_suite.png"
